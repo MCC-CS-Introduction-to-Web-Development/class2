@@ -1,0 +1,50 @@
+body {
+    font-family: "Audiowide", sans-serif;
+    background-color: rgba(50, 212, 191, 0.664);
+}
+
+h1 {
+    color: rgb(235, 14, 243);
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+}
+
+h1, h2, h3 {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: rgb(10, 209, 149);
+}
+
+nav p:hover {
+    background-color:  rgb(235, 14, 243);
+}
+
+nav ul p {
+    text-decoration: line-through;
+}
+
+a:hover {
+    font-size: 32px;
+}
+
+img {
+    transform: rotate(90deg);
+}
+
+.purple-background {
+    background-color: blueviolet;
+}
+
+#list {
+    font-style: italic;
+    text-decoration: dotted;
+}
+
+#list h3 {
+    text-decoration: none;
+}
