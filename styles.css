@@ -28,7 +28,7 @@ nav ul p {
     text-decoration: line-through;
 }
 
-a:hover {
+a:hover, a:visited {
     font-size: 32px;
 }
 
@@ -37,14 +37,64 @@ img {
 }
 
 .purple-background {
-    background-color: blueviolet;
+    background-color: #F3C716;
 }
 
 #list {
     font-style: italic;
-    text-decoration: dotted;
 }
 
 #list h3 {
     text-decoration: none;
+}
+
+[my-name="footer"] {
+    background-color: brown;
+}
+
+section + h2 {
+    text-decoration: line-through;
+
+}
+
+
+@media print {
+
+    h1 {
+        color: rgb(0, 0, 0);
+    }
+
+    h2 {
+        color: rgb(219, 9, 9);
+        text-align: center;
+    }
+}
+
+
+/* Medium screen selector */
+
+@media screen and (min-width: 370px) and (max-width: 550px) {
+
+    h1 {
+        color: rgb(75, 14, 243);
+    }
+
+    h2 {
+        color: rgb(255, 0, 200);
+        text-align: center;
+    }
+}
+
+/* Small screen selector */
+
+@media screen and (max-width: 370px) {
+
+    h1 {
+        color: rgb(6, 88, 13);
+    }
+
+    h2 {
+        color: rgb(255, 0, 34);
+        text-align: center;
+    }
 }
