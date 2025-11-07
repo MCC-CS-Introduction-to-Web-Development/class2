@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form-styles.css" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Let's make a form!</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Name</legend>
+          <label for="first_name">First Name:</label>
+          <input id="fname" type="text" minlength="2" maxlength="20" />
+          <br />
+          <label for="last_name">Last Name:</label>
+          <input id="lname" type="text" />
+        </fieldset>
+        <fieldset>
+          <legend>Favorite Season</legend>
+          <input id="season_winter" type="radio" name="season" />
+          <label class="choice" for="season_winter">Winter</label>
+          <input id="season_spring" type="radio" name="season" />
+          <label class="choice" for="season_spring">Spring</label>
+          <input id="season_summer" type="radio" name="season" />
+          <label class="choice" for="season_summer">Summer</label>
+          <input id="season_fall" type="radio" name="season" />
+          <label class="choice" for="season_fall">Fall</label>
+        </fieldset>
+        <fieldset>
+          <legend>Select Role(s) that Apply</legend>
+          <input id="role_sde" type="checkbox" name="role" />
+          <label for="role_sde">Software Developer</label>
+          <br />
+          <input id="role_tchr" type="checkbox" name="role" />
+          <label for="role_tchr">Instructor</label>
+        </fieldset>
+        <label for="state">Where are you from?</label>
+        <select id="state">
+          <option selected disabled>Select a state...</option>
+          <option>Nebraska</option>
+          <option>Colorado</option>
+          <option>Iowa</option>
+        </select>
+        <br />
+        <label for="questions">Questions/Comments?</label>
+        <textarea
+          id="questions"
+          placeholder="Type your stuff here..."
+        ></textarea>
+        <br />
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
